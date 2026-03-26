@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('analise_dados/coffee_data.csv')
+df = pd.read_csv('video_games_sales.csv')
 
-st.title("Dashboard - Vendas de Café")
+st.title("Dashboard - Vendas Jogos - Vídeo Game")
 
 product = st.selectbox("Selecione o produto", df['product'].unique())
 
