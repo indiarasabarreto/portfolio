@@ -1,4 +1,4 @@
-### portfolio
+/* portfolio
 
 portfolio-python/
 ├── automacao-arquivos/
@@ -105,5 +105,5 @@ Um painel interativo com dados
 💡 Extra
     - Publicar online (Streamlit Cloud)
 
-###
+*\
 
