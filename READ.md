@@ -1,49 +1,63 @@
-/* portfolio
+# Portfolio
 
+Pequeno portfolio para aprender Python
+
+## Estrutura: 
+
+```md
+## 📁 Estrutura
 portfolio-python/
-├── automacao-arquivos/
-├── analise-dados/
-├── api-tarefas/
-├── dashboard-streamlit/
+    src/
+    ├── automacao-arquivos/
+    ├── analise-dados/
+    ├── api-tarefas/
+    ├── dashboard-streamlit/
 
-                    🚀 PROJETO 1 — Automação de Arquivos
-📌 O que você vai construir
+# 🚀 PROJETO 1 — Automação de Arquivos
 
-Um script que:
+````
 
-    - Organiza arquivos por tipo (PDF, imagem, etc.)
-    - Move automaticamente para pastas
+````
+## 📌 O que você vai construir
 
-🛠️ Tecnologias:
-    - Python
-    - os, shutil
+        Um script que:
 
+            - Organiza arquivos por tipo (PDF, imagem, etc.)
+            - Move automaticamente para pastas
 
-🧩 Passo a passo
-    1. Ler arquivos de uma pasta
-    2. Identificar extensão (.pdf, .jpg…)
-    3. Criar pastas automaticamente
-    4. Mover arquivos
-
-💡 Extra (diferencial)
-    - Rodar automaticamente (cron ou loop)
+        🛠️ Tecnologias:
+            - Python
+            - os, shutil
 
 
+        🧩 Passo a passo
+            1. Ler arquivos de uma pasta
+            2. Identificar extensão (.pdf, .jpg…)
+            3. Criar pastas automaticamente
+            4. Mover arquivos
+
+        💡 Extra (diferencial)
+            - Rodar automaticamente (cron ou loop)
 
 
 
 
 
-                📊 PROJETO 2 — Análise de Dados
+````
 
-📌 O que você vai construir
+# 📊 PROJETO 2 — Análise de Dados
 
+## 📌 O que você vai construir
+
+````
 Análise de vendas (ou dados públicos)
 
 🛠️ Tecnologias:
     - pandas
     - matplotlib
+
 🧩 Passo a passo:
+
 1. Baixar dataset (Kaggle ou fake)
 2. Limpar dados
 3. Fazer perguntas:
@@ -53,19 +67,20 @@ Análise de vendas (ou dados públicos)
 
 💡 Extra
     - Usar Jupyter Notebook 
+````
+# 🌐 PROJETO 3 — API Backend (ESSENCIAL)
 
-            🌐 PROJETO 3 — API Backend (ESSENCIAL)
+## 📌 O que você vai construir
 
-📌 O que você vai construir
-
+````
 Uma API de tarefas (to-do list)
 
 🛠️ Tecnologias:
     - FastAPI (recomendado)
 ou
     - Flask
-🧩 Funcionalidades:
 
+🧩 Funcionalidades:
     - Criar tarefa
     - Listar tarefas
     - Atualizar
@@ -79,12 +94,13 @@ ou
 
 💡 Extra (MUITO forte)
     - Deploy (Render ou Railway)
+````
 
+# 🖥️ PROJETO 4 — Dashboard com Interface
 
-        🖥️ PROJETO 4 — Dashboard com Interface
+## 📌 O que você vai construir
 
-📌 O que você vai construir
-
+````
 Um painel interativo com dados
 
 🛠️ Tecnologia:
@@ -105,5 +121,11 @@ Um painel interativo com dados
 💡 Extra
     - Publicar online (Streamlit Cloud)
 
-*\
+`````
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+
 
