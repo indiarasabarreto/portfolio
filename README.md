@@ -13,9 +13,9 @@ portfolio-python/
     ├── api-tarefas/
     ├── dashboard-streamlit/
 
-# 🚀 PROJETO 1 — Automação de Arquivos
-
 ````
+
+# 🚀 PROJETO 1 — Automação de Arquivos
 
 ````
 ## 📌 O que você vai construir
