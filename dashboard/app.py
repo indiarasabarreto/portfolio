@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('video_games_sales.csv')
+df = pd.read_csv('coffee_data.csv')
 
-st.title("Dashboard - Vendas Jogos - Vídeo Game")
+st.title("Dashboard de Vendas")
 
-product = st.selectbox("Selecione o produto", df['product'].unique())
+product = st.selectbox("Escolha o produto", df['coffee_name'].unique())
 
 filtered_data = df[df[df['product'] == product]]
 
