@@ -1,7 +1,5 @@
 # Automação de Arquivos
 
-````
-
 # 🚀 PROJETO 1 — Automação de Arquivos
 
 ````
