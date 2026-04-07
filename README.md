@@ -1,18 +1,5 @@
 # Automação de Arquivos
 
-Pequeno portfolio para aprender Python
-
-## Estrutura: 
-
-```md
-## 📁 Estrutura
-portfolio-python/
-    src/
-    ├── automacao-arquivos/
-    ├── analise-dados/
-    ├── api-tarefas/
-    ├── dashboard-streamlit/
-
 ````
 
 # 🚀 PROJETO 1 — Automação de Arquivos
