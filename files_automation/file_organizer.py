@@ -5,34 +5,45 @@ import shutil
 base_directory = os.path.dirname(os.path.abspath(__file__))
 
 
-file_organizer = os.path.join(base_directory, 'organized_files')
-destination_folder = os.path.join(base_directory, 'files')
+""" 
+    source_folders = [
+    os.path.join(base_directory, './organized_files/documents'),
+    os.path.join(base_directory, './organized_files/spreadsheets'),
+    os.path.join(base_directory, './organized_files/images')
+] 
+
+
+destination_folder = os.path.join(base_directory, './files')
+
+for folder in source_folders:
+    if not os.path.exists(folder):
+        print(f"Source folder '{folder}' does not exist. Skipping.")
+        continue
+
+    for filename in os.listdir(folder):
+        file_path = os.path.join(folder, filename)
+
+        if os.path.isfile(file_path):
+            destination = os.path.join(destination_folder, filename)
+            os.makedirs(destination_folder, exist_ok=True)
+
+            shutil.move(file_path, os.path.join(destination_folder, filename))
+            print(f"Moved '{filename}' to '{destination_folder}'") """
 
 
 
-extensions = {
-    'images': ['.WebP', '.png'],
-    'documents': ['.pdf'],
-    'spreadsheets': ['.xlsx']
-}
+base_path = os.path.join(base_directory, 'organized_files')
 
+for folder in os.listdir(base_path):
+    folder_path = os.path.join(base_path, folder)
 
-if not os.path.exists(file_organizer):
-    print(f'Error: The directory "{file_organizer}" does not exist.')
-    exit()
+    if os.path.isdir(folder_path):
+        for filename in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, filename)
 
-for filename in os.listdir(file_organizer):
-    file_path = os.path.join(file_organizer, filename)
-
-    if os.path.isfile(file_path):
-        name, extension = os.path.splitext(filename)
-
-
-        for paste, types in extensions.items():
-            if extension.lower() in types:
-                destination = os.path.join(destination_folder, paste)
+            if os.path.isfile(file_path):
+                destination = os.path.join(base_directory, 'files')
                 os.makedirs(destination, exist_ok=True)
 
                 shutil.move(file_path, os.path.join(destination, filename))
-                print(f'Moved: {filename} to {destination}')
-                break
+                print(f'Movido: {filename} → {destination}')
