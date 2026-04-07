@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 df = pd.read_csv('coffee_data.csv')
-print(df.columns)
+# print(df.columns)
 
 st.title("Dashboard de Vendas")
 
