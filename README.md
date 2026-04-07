@@ -5,7 +5,7 @@
 # 🚀 PROJETO 1 — Automação de Arquivos
 
 ````
-## 📌 O que você vai construir
+## 📌 O que foi feito, passo a passo:
 
         Um script que:
 
